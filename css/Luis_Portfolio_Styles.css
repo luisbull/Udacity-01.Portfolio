@@ -1,50 +1,100 @@
+
+/* ---Headaer Block--- */
+
 .header_container {
   display: flex;
   height: 110px;
+  background-color: #dcd9d9;
+  margin-bottom: 20px;
 }
 
 .logo_img {
   max-width: 80px;
-  /* i need to input code to restrict logoImage of scaling */
 }
 
 .header_name {
-  color: red;
+  font-family: Arial;
+  color: white;
   text-align: right;
-  margin-right: 20%; /*adjust this*/
   width: 100%;
 }
 
-.header_title {
-  border-bottom: 3px solid blue;
-  text-align: right;
-  text-decoration: underline;
+
+/* --- Hero and Main paragraph --- */
+
+.main_text {
+  font-family: Arial;
+  text-align: justify;
+  width: 100%;
+  color: #a5a5a5;
 }
 
 .hero_img {
+  display: flex;
   min-width: 390px;
   max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
 }
 
+
+/* --- Section --- */
 
 .container, .hero_img{
   display: inline-block;
 }
 
 .skills_img {
-  max-width: 360px;
+  display: flex;
+  max-width: 385px;
   border-radius: 10px;
-
 }
 
 .skills_name {
+  font-family: Arial;
+  color: white;
   text-align: center;
   text-decoration: underline;
   text-transform: uppercase;
+  background-color: #dcd9d9;
+  border-radius: 10px;
 }
 
 .skills_text {
-  text-align: center;
-  color: blue;
+  font-family: Arial;
+  text-align: justify;
+  color: #a5a5a5;
+}
+
+@media screen and (min-width: 390px) {
+  .skills_text {
+    max-width: 390px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .main_text {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .hero_img {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header_container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
