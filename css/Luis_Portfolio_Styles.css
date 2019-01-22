@@ -41,7 +41,7 @@
 
 /* --- Section --- */
 
-.container, .hero_img{
+.container {
   display: inline-block;
 }
 
