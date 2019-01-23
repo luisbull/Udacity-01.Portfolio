@@ -51,11 +51,20 @@
   border-radius: 10px;
 }
 
-.skills_name {
+.skills_main_name {
   font-family: Arial;
   color: white;
   text-align: center;
   text-decoration: underline;
+  text-transform: uppercase;
+  background-color: #dcd9d9;
+  border-radius: 10px;
+}
+  
+  .skills_name {
+  font-family: Arial;
+  color: white;
+  text-align: center;
   text-transform: uppercase;
   background-color: #dcd9d9;
   border-radius: 10px;
@@ -67,7 +76,16 @@
   color: #a5a5a5;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 460px) and (max-width: 839px) {
+  .skills_img, .skills_name {
+    float: left;
+    display: flex;
+    max-width: 60%;
+    margin: 2%;
+  }
+}
+
+@media screen and (min-width: 840px) {
   .skills_text {
     max-width: 390px;
     margin-left: 10px;
