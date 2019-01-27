@@ -94,7 +94,7 @@
 }
 
 @media screen and (min-width: 300px) {
-  .skills_text, .skills_main_name, .skills_name, .skills_text {
+  .main_text, .skills_main_name, .skills_name, .skills_text {
     
     max-width: 80%;
     margin-left: auto;
