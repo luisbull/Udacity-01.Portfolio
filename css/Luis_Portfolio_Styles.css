@@ -118,7 +118,7 @@
   .autocad_img, .autocad_text, .autocad_name {
     
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     max-width: 50%;
     margin-left: auto;
     margin-right: 0px;
